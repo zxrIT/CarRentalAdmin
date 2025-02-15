@@ -81,9 +81,9 @@ const ruleFormData = reactive<ICar>({
 })
 
 const beforeUpload: UploadProps['beforeUpload'] = (file) => {
-    const isJPGOrPNG = file.type === 'image/jpeg' || file.type === 'image/png'
+    const isJPGOrPNG = file.type === 'image/png'
     if (!isJPGOrPNG) {
-        ElMessage.error('只能上传 JPG/PNG 格式的图片!')
+        ElMessage.error('只能上传 PNG 格式的图片!')
         return false
     }
     const isLt500K = file.size / 1024 < 500
@@ -261,7 +261,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
 
                                 <template #tip>
                                     <div class="el-upload__tip">
-                                        jpg/png 格式图片，大小不超过 500KB
+                                        png 格式图片，大小不超过 500KB
                                     </div>
                                 </template>
                             </el-upload>

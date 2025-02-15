@@ -1,4 +1,4 @@
-import type {IStorage} from "@/typings/hooks/localStorage.ts";
+import type {IStorage} from "../typings/hooks/localStorage.ts";
 
 export function useLocalStorage(): IStorage {
     const setStorage = (key: string, payload: string): void => {

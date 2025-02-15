@@ -58,7 +58,7 @@ const deleteCar = async (id: string) => {
     if (deleteResponse.code === 200) {
         ElMessage({
             type: "success",
-            message: updateResponse.message,
+            message: deleteResponse.message,
         })
         reRenderStatus.value = !reRenderStatus.value
     } else {

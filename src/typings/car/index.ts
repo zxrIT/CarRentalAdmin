@@ -36,3 +36,37 @@ export interface ICarShow {
     seats: string;
     status: string;
 }
+
+export interface ICarDetails {
+    id: string;
+    autoAirConditioner: string
+    airSystem: string
+    chair: string
+    driverAssistanceImage: boolean
+    carPlayer: boolean
+    skylight: boolean
+    radar: boolean
+    tirePressureMonitoringFunction: string
+    bluetoothUSB: string
+    nearAndFarLightType: string
+    automaticParking: boolean
+    launchWithOneClick: boolean
+}
+
+export interface ICarDetailsShow {
+    id: string;
+    name: string;
+    carImage: string;
+    autoAirConditioner: string
+    airSystem: string
+    chair: string
+    driverAssistanceImage: string
+    carPlayer: string
+    skylight: string
+    radar: string
+    tirePressureMonitoringFunction: string
+    bluetoothUSB: string
+    nearAndFarLightType: string
+    automaticParking: string
+    launchWithOneClick: string
+}
